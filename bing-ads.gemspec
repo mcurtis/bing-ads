@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.version       = Bing::Ads::VERSION
   spec.authors       = ["oss92"]
   spec.email         = ["mohamed.o.alnagdy@gmail.com", "oss@findhotel.net"]
-  spec.license       = 'MIT'
+  spec.license       = "MIT"
 
   spec.summary       = %q{Enhances the experience of developing Bing Ads applications with Ruby}
   spec.description   = %q{A Ruby client for Bing Ads API that includes a proxy to all Bing Ads API web services and abstracts low level details of authentication with OAuth2.}
@@ -21,11 +21,11 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  spec.add_dependency 'savon', '~> 2.14'
-  spec.add_dependency 'activesupport', '~> 5.0'
-  spec.add_dependency 'persey', '~> 0.0.11'
+  spec.add_dependency "savon", "~> 2.13"
+  spec.add_dependency "activesupport", ">= 7.0", "< 8.1"
+  spec.add_dependency "persey", "~> 1.0.0"
 
-  spec.add_development_dependency "bundler", "~> 1.15"
-  spec.add_development_dependency "rake", "~> 10.0"
-  spec.add_development_dependency "rspec", "~> 3.0"
+  spec.add_development_dependency "bundler", "~> 2.5"
+  spec.add_development_dependency "rake", "~> 13.0"
+  spec.add_development_dependency "rspec", "~> 3.12"
 end
